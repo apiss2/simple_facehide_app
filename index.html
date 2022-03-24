@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdn.jsdelivr.net/npm/onnxjs/dist/onnx.min.js"></script>
+  <script src="./js/ndarray-browser-min.js"></script>
+  <script src="./js/imagenet.js"></script>
+  <script src="./js/image-loader.js"></script>
+  <script src="./js/index.js"></script>
+  <script>
+    const imageSize = 224;
+  </script>
+</head>
+<body>
+  <h1>ちゃんと動いてない気がする</h1>
+  <div class="upload">
+    <input type="file" name="file" id="file">
+  </div>
+  <canvas id="canvas"></canvas>
+  <div>
+    <input type="button" value="分類実行" onclick="runExample()">
+  </div>
+  <div id="predictions"></div>
+  <script src="./js/fileapi.js"></script>
+</body>
+</html>
